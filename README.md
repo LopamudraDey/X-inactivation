@@ -1,14 +1,14 @@
 # X-inactivation
 # Step 1: Download file from GEO
 prefetch  SRR16922266
-fastq-dump SRR16922266 --split-files --gzip
 
+fastq-dump SRR16922266 --split-files --gzip
+This will give you 3 files: _1,_2 and _3
 SRR16922266_1.fastq.gz
 SRR16922266_2.fastq.gz
 SRR16922266_3.fastq.gz
 
 
-This will give you 3 files: _1,_2 and _3
 
 # Create Conda environment
 
