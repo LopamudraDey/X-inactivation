@@ -4,7 +4,9 @@ prefetch  SRR16922266
 
 fastq-dump SRR16922266 --split-files --gzip \
 This will give you 3 files: _1,_2 and _3 \
-SRR16922266_1.fastq.gz (Length 8, Sample Index or i7 index)
+# Use zcat to check 
+Example: SRR16922266_1.fastq.gz | head -20  \
+SRR16922266_1.fastq.gz (Length 8, Sample Index or i7 index) \
 SRR16922266_2.fastq.gz (Length 26, the Cell Barcode and UMI (Unique Molecular Identifier).\
 SRR16922266_3.fastq.gz ( Length 91, the biological read)
 
