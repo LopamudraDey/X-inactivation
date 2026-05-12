@@ -4,7 +4,8 @@
 
 conda create -n haplo python=3.10 -y 
 
-conda activate haplo  \n
+conda activate haplo  
+
 conda install -c conda-forge -c bioconda -y \
 samtools \
 bcftools \
