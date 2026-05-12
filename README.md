@@ -3,7 +3,7 @@
 prefetch  SRR16922266
 
 fastq-dump SRR16922266 --split-files --gzip \
-This will give you 3 files: _1,_2 and _3 \
+This will give you 3 files: _1,_2 and _3 
 # Use zcat to check 
 Example: SRR16922266_1.fastq.gz | head -20  \
 SRR16922266_1.fastq.gz (Length 8, Sample Index or i7 index) \
@@ -29,7 +29,7 @@ STAR \
 --outSAMattributes NH HI AS nM CB UB GX GN \
 --outFileNamePrefix ./SRR16922266_STARsolo/
 
-# Create Conda environment
+# Step 3: Create Conda environment and install
 
 conda create -n haplo python=3.10 -y 
 
@@ -45,4 +45,10 @@ pandas \
 matplotlib \
 tqdm \
 whatshap
+# Step 4: Execute Automated Pipeline Script : run_xci_pipeline.sh
 
+chmod +x run_xci_from_bam.sh
+
+./run_xci_from_bam.sh \
+Aligned.sortedByCoord.out.bam \
+SRR16922266
