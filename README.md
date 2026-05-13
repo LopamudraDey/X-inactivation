@@ -1,4 +1,5 @@
 # X-inactivation
+<img width="1725" height="1040" alt="image" src="https://github.com/user-attachments/assets/cb12dace-d5e9-4fe1-b6e3-d9172cb02fad" />
 
 mkdir X_inactivation
 # Step 1: Download file from GEO
