@@ -57,9 +57,11 @@ SRR16922266
  # Environment Setup: 
  Install dependencies:
  
-pip install pandas numpy matplotlib tqdm scikit-learn umap-learn)
+pip install pandas numpy matplotlib tqdm scikit-learn umap-learn
 
-Run python xci_haplotype_clustering.py \
+# Run python Code: 
+
+python xci_haplotype_clustering.py \
 --bam clean.bam \
 --vcf chrX.phased.vcf.gz \
 --clusters 2 \
