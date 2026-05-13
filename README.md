@@ -58,6 +58,7 @@ SRR16922266
  Install dependencies:
  
 pip install pandas numpy matplotlib tqdm scikit-learn umap-learn)
+
 Output: ase_matrix.tsv (Cell × SNP haplotype matrix)
 
 UMAP, clustering and silhoutte score
