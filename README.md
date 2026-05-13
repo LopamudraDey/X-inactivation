@@ -53,7 +53,11 @@ chmod +x run_xci_from_bam.sh
 Aligned.sortedByCoord.out.bam \
 SRR16922266
 
-# Step 5: Run xci_haplotype_clustering.py with bam file and chrx.phased.vcf.gz as input. Install (pip install pandas numpy matplotlib tqdm scikit-learn umap-learn)
+# Step 5: Run xci_haplotype_clustering.py with bam file and chrx.phased.vcf.gz as input. 
+ # Environment Setup: 
+ Install dependencies:
+ 
+pip install pandas numpy matplotlib tqdm scikit-learn umap-learn)
 Output: ase_matrix.tsv (Cell × SNP haplotype matrix)
 
 UMAP, clustering and silhoutte score
