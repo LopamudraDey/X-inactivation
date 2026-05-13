@@ -47,7 +47,8 @@ pandas \
 matplotlib \
 tqdm \
 whatshap
-# Step 4: Execute Automated Pipeline Script : run_xci_pipeline.sh
+# Step 4: Execute Automated Pipeline Script : run_xci_pipeline.sh 
+Use the STAR or Cellranger generated BAM file as input
 
 chmod +x run_xci_from_bam.sh
 
