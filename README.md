@@ -1,4 +1,6 @@
 # X-inactivation
+
+mkdir X_inactivation
 # Step 1: Download file from GEO
 prefetch  SRR16922266
 
@@ -62,7 +64,7 @@ pip install pandas numpy matplotlib tqdm scikit-learn umap-learn
 # Run python Code: 
 
 python xci_haplotype_clustering.py \
---bam clean.bam \
+--bam SRR16922266.clean.bam \
 --vcf chrX.phased.vcf.gz \
 --clusters 2 \
 --min_mapq 10 \
