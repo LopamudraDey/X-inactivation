@@ -59,6 +59,13 @@ SRR16922266
  
 pip install pandas numpy matplotlib tqdm scikit-learn umap-learn)
 
+Run python xci_haplotype_clustering.py \
+--bam clean.bam \
+--vcf chrX.phased.vcf.gz \
+--clusters 2 \
+--min_mapq 10 \
+--min_snps 5
+
 Output: ase_matrix.tsv (Cell × SNP haplotype matrix)
 
 UMAP, clustering and silhoutte score
