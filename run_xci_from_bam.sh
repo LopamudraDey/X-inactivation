@@ -86,7 +86,7 @@ bcftools index $OUTDIR/${SAMPLE}.het.vcf.gz
 
 
 # =========================================================
-# 5. CHR X EXTRACTION (IMPORTANT FIX: check X or chrX)
+# 5. CHR X EXTRACTION (IMPORTANT FIX: X not chrX)
 # =========================================================
 echo "Step 5: chrX extraction"
 
