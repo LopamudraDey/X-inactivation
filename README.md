@@ -44,11 +44,13 @@ whatshap
 # Step 4: Execute Automated Pipeline Script : run_xci_pipeline.sh 
 Use the STAR or Cellranger generated BAM file as input
 
-chmod +x run_xci_from_bam.sh
-./run_xci_from_bam.sh sample.bam sample
+chmod +x chrX_Haplo_Pipeline.sh
+
+
+./chrX_Haplo_Pipeline.sh sample.bam sample
 Example:
 
-./run_xci_from_bam.sh GSM7148/possorted_genome_bam.bam GSM7148
+./chrX_Haplo_Pipeline.sh GSM7148/possorted_genome_bam.bam GSM7148
 
 It will generate output
 | File                           | Description                                                 |
