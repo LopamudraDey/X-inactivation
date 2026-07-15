@@ -17,9 +17,9 @@ SRR16922266_3.fastq.gz ( Length 91, the biological read)
 
 # Step 2: Creating the Bam file (Either STAR or Cellranger)
 Get the mm10 Cell Ranger reference
-wget https://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-mm10-3.0.0.tar.gz
+wget https://cf.10xgenomics.com/supp/cell-exp/refdata-cellranger-GRCh38-3.0.0.tar.gz
 
-tar -zxvf refdata-cellranger-mm10-3.0.0.tar.gz
+tar -zxvf refdata-cellranger-GRCh38-3.0.0.tar.gz
 
 cellranger count --id=GSM7148 --transcriptome=refdata-cellranger-GRCh38-3.0.0  --fastqs=GSM7148/ --sample=sample
 
