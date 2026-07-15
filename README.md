@@ -48,7 +48,7 @@ chmod +x chrX_Haplo_Pipeline.sh
 
 
 ./chrX_Haplo_Pipeline.sh sample.bam sample
-Example:
+# Example:
 
 ./chrX_Haplo_Pipeline.sh GSM7148/possorted_genome_bam.bam GSM7148
 
@@ -66,7 +66,7 @@ It will generate output
 | `GSM7148_Hap0_vs_Hap1.png`     | Bar plot showing phased haplotype 0 and haplotype 1 counts. |
 
 
-# XCI Escape Genes Analysis
+# Step 5. XCI Escape Genes Analysis
 
 python xci_analysis.py   --bam GSM7148/possorted_genome_bam.bam  --vcf /GSM7148/chrX.phased.vcf.gz   --gtf /GSM7148/gencode.v44.annotation.gtf
 
