@@ -1,5 +1,5 @@
 # X-inactivation
-<img width="1524" height="714" alt="image" src="https://github.com/user-attachments/assets/474e4416-a5af-480e-ba88-ce07fdd97566" />
+<img width="1586" height="743" alt="image" src="https://github.com/user-attachments/assets/11cf3344-2f43-4c71-84a2-188b20a5c6fd" />
 
 
 # Step 1: Download file from GEO
@@ -66,4 +66,7 @@ It will generate output
 | `GSM7148_Hap0_vs_Hap1.png`     | Bar plot showing phased haplotype 0 and haplotype 1 counts. |
 
 
+# XCI Escape Genes Analysis
+
+python xci_analysis.py   --bam GSM7148/possorted_genome_bam.bam  --vcf /GSM7148/chrX.phased.vcf.gz   --gtf /GSM7148/gencode.v44.annotation.gtf
 
