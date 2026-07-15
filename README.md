@@ -1,5 +1,5 @@
 # X-inactivation
-<img width="1524" height="714" alt="image" src="https://github.com/user-attachments/assets/16ac0f4a-e1e5-4e96-bac8-f7cda04d43bb" />
+<img width="1524" height="714" alt="image" src="https://github.com/user-attachments/assets/474e4416-a5af-480e-ba88-ce07fdd97566" />
 
 
 # Step 1: Download file from GEO
