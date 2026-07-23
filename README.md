@@ -69,6 +69,7 @@ It will generate output
 
 <img width="600" height="200" alt="Hap0_vs_Hap1_per_cell" src="https://github.com/user-attachments/assets/41ed8c27-3e71-4efc-8c36-10720eb1bc32" />
 <img width="500" height="300" alt="Hap0_vs_Hap1_UMI_barplot" src="https://github.com/user-attachments/assets/bc47d209-efc0-4cbf-a7c3-5bb9ccb54526" />
+<img width="500" height="400" alt="Hap0_vs_Hap1_per_gene" src="https://github.com/user-attachments/assets/c124125c-94ed-4245-8ce6-0de01262145e" />
 
 # Step 5. XCI Escape Genes Analysis
 
