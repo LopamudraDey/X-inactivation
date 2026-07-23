@@ -207,7 +207,7 @@ echo "Step 9: scRNA-seq allele-specific UMI analysis"
 mkdir -p $OUTDIR/scRNA_ASE
 
 
-python allele_specific_umi.py \
+python umi.py \
 --bam $BAM \
 --vcf $OUTDIR/chrX.phased.vcf.gz \
 --out $OUTDIR/scRNA_ASE \
