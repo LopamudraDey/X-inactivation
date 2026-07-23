@@ -65,6 +65,10 @@ It will generate output
 | `chrX.phased.vcf.gz`           | WhatsHap-phased chromosome X variants.                      |
 | `GSM7148_Hap0_vs_Hap1.png`     | Bar plot showing phased haplotype 0 and haplotype 1 counts. |
 
+# umi.py generates the results
+
+<img width="600" height="200" alt="Hap0_vs_Hap1_per_cell" src="https://github.com/user-attachments/assets/41ed8c27-3e71-4efc-8c36-10720eb1bc32" />
+<img width="500" height="300" alt="Hap0_vs_Hap1_UMI_barplot" src="https://github.com/user-attachments/assets/bc47d209-efc0-4cbf-a7c3-5bb9ccb54526" />
 
 # Step 5. XCI Escape Genes Analysis
 
