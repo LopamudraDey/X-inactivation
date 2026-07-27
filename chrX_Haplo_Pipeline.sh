@@ -179,7 +179,7 @@ $OUTDIR/chrX.het.vcf.gz
 echo "Step 6: in-silico haplotype phasing"
 
 
-python insilico_phase.py \
+python insilico_phase_v2.py \
 --bam $OUTDIR/${SAMPLE}.clean.sorted.bam \
 --vcf $OUTDIR/chrX.het.vcf.gz \
 --out $OUTDIR/chrX.insilico.phased.vcf.gz \
