@@ -75,17 +75,28 @@ $OUTDIR/${SAMPLE}.clean.sorted.bam
 
 echo "Checking 10x CB and UB tags"
 
+# NOTE: previously this was:
+#   samtools view ... | head -1 | grep -E "CB:Z|UB:Z" || { ... exit 1; }
+# Under `set -o pipefail`, `head -1` closes the pipe after one line, so
+# samtools gets SIGPIPE and returns a non-zero exit code even though the
+# tags ARE present and grep matches fine. pipefail then reports the whole
+# pipeline as failed, tripping the `||` and printing a false error.
+# Fix: write the sampled line to a file first, then grep the file so the
+# pass/fail decision is based only on grep's own exit status.
 
-samtools view \
-$OUTDIR/${SAMPLE}.clean.sorted.bam \
+samtools view $OUTDIR/${SAMPLE}.clean.sorted.bam 2>/dev/null \
 | head -1 \
-| grep -E "CB:Z|UB:Z" || {
+> $OUTDIR/${SAMPLE}.tagcheck.txt || true
 
-echo "ERROR: CB/UB tags not found in BAM"
-echo "10x barcode information is required"
-exit 1
+if grep -qE "CB:Z|UB:Z" $OUTDIR/${SAMPLE}.tagcheck.txt; then
+    echo "CB/UB tags found."
+else
+    echo "ERROR: CB/UB tags not found in BAM"
+    echo "10x barcode information is required"
+    exit 1
+fi
 
-}
+rm -f $OUTDIR/${SAMPLE}.tagcheck.txt
 
 
 
