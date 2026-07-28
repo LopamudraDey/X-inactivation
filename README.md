@@ -41,7 +41,11 @@ tqdm \
 whatshap
 
 
-# Step 4: Execute Automated Pipeline Script : run_xci_pipeline.sh 
+# Step 4: Execute Automated Pipeline Script : chrX_Haplo_Pipeline.sh 
+Please Download umi.py and insilico_phasing_v2.py inside same folder.
+
+
+
 Use the STAR or Cellranger generated BAM file as input
 
 chmod +x chrX_Haplo_Pipeline.sh
